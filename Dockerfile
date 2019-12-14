@@ -7,10 +7,10 @@ LABEL "name"="Conan Hooks" \
       "com.github.actions.color"="blue" \
       "com.github.actions.description"="Validate your Conan recipe with Conan hooks"
 
-ENV LC_ALL C.UTF-8 \
-    LANG en_US.UTF-8 \
-    LANGUAGE en_US.UTF-8 \
-    CONAN_USER_HOME /tmp/conan
+ENV LC_ALL=C.UTF-8 \
+    LANG=en_US.UTF-8 \
+    LANGUAGE=en_US.UTF-8 \
+    CONAN_USER_HOME=/tmp/conan
 
 RUN pip install pylint astroid \
     && conan profile new default --detect \
