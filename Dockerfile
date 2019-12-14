@@ -14,4 +14,6 @@ ENV LANGUAGE en_US.UTF-8
 
 ADD entrypoint.sh /entrypoint.sh
 
+RUN chmod +x /entrypoint
+
 ENTRYPOINT ["/entrypoint.sh"]
